@@ -25,17 +25,41 @@
         </td>
     
         <td class="pu">
-          $<span>25.00</span>
+          $<span id = price > 25.00</span>
         </td>
     
         <td class="qty">
           <label>
-            <input type="number" value="0" min="0">
+            <input id= "amount"type="number" value="0" min="0">
           </label>
         </td>
     
         <td class="subtot">
-          $<span>0</span>
+          $<span id= subtotal>0</span>
+        </td>
+    
+        <td class="rm">
+          <button class="btn btn-delete">Delete</button>
+        </td>
+      </tr>
+
+      <tr class="product">
+        <td class="name">
+          <span>IronHack x Gucci Tee-Shirt</span>
+        </td>
+    
+        <td class="pu">
+          $<span id = price > 250.00</span>
+        </td>
+    
+        <td class="qty">
+          <label>
+            <input id= "amount"type="number" value="0" min="0">
+          </label>
+        </td>
+    
+        <td class="subtot">
+          $<span id= subtotal>0</span>
         </td>
     
         <td class="rm">
@@ -43,7 +67,7 @@
         </td>
       </tr>
     </tbody>
-    <!-- <tfoot>
+    <tfoot>
       <tr class="new">
         <td>
           <input type="text"/>
@@ -57,12 +81,12 @@
           <button id="create" class="btn">Create</button>
         </td>
       </tr>
-    </tfoot> -->
+    </tfoot>
 
   </table>
 
   <p class="cta">
-    <button id="calc" class="btn btn-success">Calculate prices</button>
+    <button id="calc" class="btn btn-success" onclick="updateSubtot()">Calculate prices</button>
   </p>
 
   <h2>Total: $<span>0</span></h2>
